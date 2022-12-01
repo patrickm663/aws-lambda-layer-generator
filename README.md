@@ -19,6 +19,9 @@ git clone https://github.com/patrickm663/aws-layers.git
 cd aws-layers
 ```
 3. Update the `requirements.txt` to include the packages you wish to include in your layer.
+```
+vim src/requirements.txt
+```
 4. Set the shell script `create-layer.sh` as executable:
 ```
 chmod +x create-layer.sh
@@ -30,6 +33,7 @@ chmod +x create-layer.sh
 6. Retrieve the zip file in `output-layer/`, titled `python-layer3-8.zip`
 
 _Note: the current commands are set to **overwrite** `python-layer3-8.zip` each time the script is run._
+
 7. Add the zip file as a layer in AWS Lambda.
 
 ## Contributing
