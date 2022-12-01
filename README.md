@@ -10,27 +10,27 @@ For Python 3.7 or 3.9, update the Dockerfile accordingly. Further modifications 
 - Docker installed
 
 ## Usage
-- Clone the repository:
+1.  Clone the repository:
 ```
 git clone https://github.com/patrickm663/aws-layers.git
 ```
-- Enter the directory:
+2.  Enter the directory:
 ```
 cd aws-layers
 ```
-- Update the `requirements.txt` to include the packages you wish to include in your layer.
-- Set the shell script `create-layer.sh` as executable:
+3. Update the `requirements.txt` to include the packages you wish to include in your layer.
+4. Set the shell script `create-layer.sh` as executable:
 ```
 chmod +x create-layer.sh
 ```
-- Run the script (using `sudo` if required by your Docker set-up):
+5. Run the script (using `sudo` if required by your Docker set-up):
 ```
 ./create-layer.sh
 ```
-- Retrieve the zip file in `output-layer/`, titled `python-layer3-8.zip`
+6. Retrieve the zip file in `output-layer/`, titled `python-layer3-8.zip`
 
 _Note: the current commands are set to **overwrite** `python-layer3-8.zip` each time the script is run._
-- Add the zip file as a layer in AWS Lambda.
+7. Add the zip file as a layer in AWS Lambda.
 
 ## Contributing
 Pull requests are welcome and encouraged!
