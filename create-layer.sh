@@ -3,10 +3,12 @@
 # Author: Patrick Moehrke
 # License: MIT License
 
-echo "Select a Python version: "
+echo "Python AWS Layer Generator"
+echo " "
 echo "1 - Python 3.7"
 echo "2 - Python 3.8"
 echo "3 - Python 3.9"
+echo "Select a Python version: "
 read version;
 
 case $version in
