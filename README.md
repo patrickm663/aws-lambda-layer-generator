@@ -1,9 +1,7 @@
-# Utility for Creating Custom Python 3.8 Layers for AWS Lambda
-This is a simple utility for adding user-defined packages to a Python 3.8 AWS Lambda layer. The script spins up a Python3.8-slim Docker image to install and zip the packages you need.
+# Utility for Creating Custom Python Layers for AWS Lambda
+This is a simple utility for adding user-defined packages to a Python 3.7-3.9 AWS Lambda layer. The script spins up a Python3.X-slim Docker image to install and zip the packages you need.
 
 Please note existing limitations of AWS Lambda such as the 250MB layer limit.
-
-For Python 3.7 or 3.9, update the Dockerfile accordingly. Further modifications to the Bash script will come in due time to allow the user to choose their Python version.
 
 ## Prerequisites
 - A UNIX environment to run the shell script
@@ -30,11 +28,12 @@ chmod +x create-layer.sh
 ```
 ./create-layer.sh
 ```
-6. Retrieve the zip file in `output-layer/`, titled `python-layer3-8.zip`
+6. Follow the prompt to select the Python version.
+7. Retrieve the zip file in `output-layer/`, titled `python-layer3-X.zip`
 
-_Note: the current commands are set to **overwrite** `python-layer3-8.zip` each time the script is run._
+_Note: the current commands are set to **overwrite** `python-layer3-X.zip` each time the script is run._
 
-7. Add the zip file as a layer in AWS Lambda.
+8. Add the zip file as a layer in AWS Lambda, using S3 where needed.
 
 ## Contributing
 Pull requests are welcome and encouraged!
