@@ -16,7 +16,7 @@ git clone https://github.com/patrickm663/aws-layers.git
 ```
 cd aws-layers
 ```
-3. Update the `requirements.txt` to include the packages you wish to include in your layer.
+3. Update the `requirements.txt` to include the packages you wish to include in your layer:
 ```
 vim src/requirements.txt
 ```
@@ -29,7 +29,7 @@ chmod +x create-layer.sh
 ./create-layer.sh
 ```
 6. Follow the prompt to select the Python version.
-7. Retrieve the zip file in `output-layer/`, titled `python-layer3-X.zip`
+7. Retrieve the zip file in `output-layer/`, titled `python-layer3-X.zip`.
 
 _Note: the current commands are set to **overwrite** `python-layer3-X.zip` each time the script is run._
 
