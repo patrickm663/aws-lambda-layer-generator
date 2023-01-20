@@ -38,3 +38,6 @@ _Note: the current commands are set to **overwrite** `python-layer3-8.zip` each 
 
 ## Contributing
 Pull requests are welcome and encouraged!
+
+## License
+Licensed under the MIT license.
