@@ -1,5 +1,8 @@
 #! /bin/bash
 
+# Author: Patrick Moehrke
+# License: MIT License
+
 ## 1. Create the Docker image containing the Python packages based off the Dockerfile
 docker build -t python-3-8-docker .
 
