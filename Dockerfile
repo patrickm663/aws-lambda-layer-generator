@@ -7,8 +7,8 @@
 FROM python:3.8-slim
 
 ## 2. Update packages and install zip
-RUN apt update && apt upgrade -y
-RUN apt install zip -y
+RUN apt-get update && apt-get upgrade -y
+RUN apt-get install zip -y
 
 ## 3. Update pip
 RUN pip install --no-cache-dir --upgrade pip
