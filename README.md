@@ -10,11 +10,11 @@ Please note existing limitations of AWS Lambda such as the 250MB layer limit.
 ## Usage
 1.  Clone the repository:
 ```
-git clone https://github.com/patrickm663/aws-layers.git
+git clone https://github.com/patrickm663/awslambda-layer-generator.git
 ```
 2.  Enter the directory:
 ```
-cd aws-layers
+cd aws-lambda-layer-generator/
 ```
 3. Update the `requirements.txt` to include the packages you wish to include in your layer:
 ```
