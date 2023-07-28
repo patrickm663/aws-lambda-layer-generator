@@ -11,6 +11,8 @@ echo "3 - Python 3.9"
 echo "Select a Python version: "
 read version;
 
+mkdir -p output-layer/
+
 case $version in
     1) 
         ## 1. Create the Docker image containing the Python packages based off the Dockerfile
