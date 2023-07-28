@@ -10,7 +10,7 @@ Please note existing limitations of AWS Lambda such as the 250MB layer limit.
 ## Usage
 1.  Clone the repository:
 ```
-git clone https://github.com/patrickm663/awslambda-layer-generator.git
+git clone https://github.com/patrickm663/aws-lambda-layer-generator.git
 ```
 2.  Enter the directory:
 ```
