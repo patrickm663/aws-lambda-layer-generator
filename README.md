@@ -3,6 +3,8 @@ This is a simple utility for adding user-defined packages to a Python 3.8-3.12 (
 
 Please note existing limitations of AWS Lambda such as the 250MB layer limit.
 
+**For ease-of-use, a demo layer can be found in the `output-layer/` folder. This contains Numpy for the Python 3.12 runtime.**
+
 ## Prerequisites
 - A UNIX environment to run the shell script
 - Docker installed
