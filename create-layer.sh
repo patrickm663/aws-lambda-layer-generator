@@ -45,7 +45,7 @@ rm Dockerfile_temp_
 ## 0.5 Check requirements.txt is where it needs to be and is named as such 
 if [ -f src/requirements.txt ] 
 then
-	echo ""
+	echo "requirements.txt file found..."
 else 
 	echo "ERROR: requirements.txt file not found in src/"
 	exit 1
