@@ -31,8 +31,7 @@ case $version in
     PYTHON_VERSION="12"
     ;;
   *)
-    echo "Invalid option $version"
-    echo "Exiting"
+    echo "Invalid option: $version"
     exit 1
     ;;
 esac
@@ -43,8 +42,17 @@ sed "s/3\.7/3\.$PYTHON_VERSION/" Dockerfile_master > Dockerfile_temp_
 sed "s/3\-7/3\-$PYTHON_VERSION/" Dockerfile_temp_ > Dockerfile_temp
 rm Dockerfile_temp_
 
+## 0.5 Check requirements.txt is where it needs to be and is named as such 
+if [ -f src/requirements.txt ] 
+then
+	echo ""
+else 
+	echo "ERROR: requirements.txt file not found in src/"
+	exit 1
+fi
+
 ## 1. Create the Docker image containing the Python packages based off the Dockerfile
-echo "Building Docker image for Python 3.$PYTHON_VERSION"
+echo "Building Docker image for Python 3.$PYTHON_VERSION..."
 docker build -t python-3-docker -f Dockerfile_temp .
 
 ## 2. Run the docker container as a background process
