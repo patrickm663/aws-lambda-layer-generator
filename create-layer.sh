@@ -60,5 +60,6 @@ docker cp $NAME:python-layer3-$PYTHON_VERSION.zip output-layer/
 
 ## 5. Delete the image and clean up
 echo "Deleting image and cleaning up..."
+docker rm $NAME
 docker image rm -f python-3-docker
 rm Dockerfile_temp
