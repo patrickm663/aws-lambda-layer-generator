@@ -7,8 +7,9 @@ Please note existing limitations of AWS Lambda such as the 250MB layer limit.
 
 ## Prerequisites
 - A UNIX environment to run the shell script
-- Docker installed
-- Since `sed` is used to find-and-replace the users's selected Python version, results may vary on Windows :) (testing on Windows is in works).
+- Docker installed and running
+
+**On Windows, be sure to use `Git Bash` in order to run the Bash script**
 
 ## Usage
 1.  Clone the repository:
